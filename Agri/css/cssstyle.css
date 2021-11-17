@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Aug, 2018, 8:16:31 PM
+    Author     : DELL
+*/
+#templatemo_footer_wrapper {
+	clear: both;
+	width: auto;
+        
+	background: #000022 url(images/templatemo_footer.jpg) repeat-x;
+	border-bottom:5px solid red;
+        border-top:5px solid red;
+}
+
+#templatemo_footer {
+   
+        width:auto;
+	text-align: center;
+	color: #ffffff;
+        bottom: 50px
+}
+
+#templatemo_footer a {
+	color: #003333;
+	font-weight: bold;
+	text-decoration: none;      
+}
+

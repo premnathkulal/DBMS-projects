@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Aug, 2018, 7:51:59 PM
+    Author     : DELL
+*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 95%; /* Full width */
+    padding: 10px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 15px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=password], select, textarea {
+    width: 95%; /* Full width */
+    padding: 10px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 15px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4ffF50;
+    color: white;
+    padding: 9px 10px;
+    border: none;
+    width:95%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45ff49;
+  
+}
+
+/* Add a background color and some padding around the form */
+
+div{
+	height:370px;
+   background:rgba(0,0,0,.5); 
+	width:410px;
+    border-radius:15px;
+}
+

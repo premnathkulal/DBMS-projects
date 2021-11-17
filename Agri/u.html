@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<body>
+
+<div id="main_place">
+  main
+</div>
+<?php
+     function add(){
+	 echo ("hi");
+	 }
+?>
+
+
+<div id=2 >
+  <?php echo "hi"; ?>
+</div>
+<div id=3 style="display:none">
+  Again two
+</div>
+<div id=4 style="display:none">
+  Again three
+</div>
+
+<script type="text/javascript">
+		var images=['download.jpg','tile.png','download.jpg'];
+var url=0;
+  i=1;
+setInterval(function(){
+   url+=1;
+   i+=1
+  if(url==4){
+    url=0;
+	i=1;
+  }
+
+   document.getElementById('main_place').innerHTML ="<?php add(); ?>";
+  document.body.style.backgroundRepeat = "no-repeat";
+
+},800);
+
+	</script>
+	
+</body>
+
+</html>

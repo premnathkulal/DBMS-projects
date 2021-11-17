@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/cssstyle.css">
+		 
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <body>
+        <?php
+require  "init.php";
+ $user_name = $_GET["uname"];
+ $user_psw = $_GET["passwrd"];
+ $sql="select for_name,state from former  where  for_id='$user_name' and  passwrd = '$user_psw'";
+
+ $result=mysqli_query($con,$sql);
+ 
+while(!mysqli_num_rows($result)>0){
+	 echo "error";
+ }
+
+	 $row = mysqli_fetch_assoc($result);
+     $state=$row['state'];
+     $mname=$row['for_name'];	 
+	  $status="success";
+ 
+ ?>
+	
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:green;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>             
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">   
+			<form class="navbar-form navbar-center" role="form">
+			
+			<div class="form-group">
+                
+             <a class="navbar-brand" href="index.html" ><?php echo "$mname"; ?></a>
+            </div>
+            <div class="form-group">
+                
+             <a class="navbar-brand" href="index.html" >Home</a>
+            </div>
+           
+              <div class="form-group">
+                  <a class="navbar-brand" href="#">Stories</a>
+            </div>
+              <div class="form-group">
+             <a class="navbar-brand" href="#">Images</a>
+            </div>
+               <div class="form-group">
+            <a class="navbar-brand" href="#">Videos</a>
+               </div>
+            
+              <div class="navbar-form navbar-right" >        
+                       
+          <a class="navbar-brand" href="index.html">Logout</a>
+		
+		<!-- Example split danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+		   
+            </div>
+            </form>
+
+
+		
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    
+   
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    
+    <br><br><br><br><br>
+               
+    
+    
+    <div class="container">
+        
+      <!-- Example row of columns -->
+      
+      <div class="row">
+          
+        <div class="col-md-6">
+            <left><img src="tile.png" height="190px" width="290x" ></left>
+            <h3><font color = "#ff0066">Former</h3></font>
+            <p><font color = "#ff9966">Sell your products to the costemers and get the profit to your product direct from the customer,<br>Sell your Second hand Machines to the costmer and get the aropriate money,<br>By the Machines from the sellers with upperable prices.</font> </p>
+            <p><a class="btn btn-default" href="FormerLogin.html" role="button" style="  background: #330066;  "><font color="#000099">Sell  products &raquo;</font></a></p>
+        </div>
+        <div class="col-md-6">
+                 <left><img src="tile.png" height="190px" width="290x" ></left>
+            <font color = "#ff0066"><h3>Costemer</h3></font>
+            <p><font color = "#ff9966">Buy  the products from our formers with direct contact<br> with the formers (Delivery charges apply).<br>Get the fresh items, fruits vegitabls. get the products with uppperable prices,products are directly serves from the formers field<font> </p>
+            <p><a class="btn btn-default" href="CostemerLogin.html" role="button" style="  background: #330066;  "><font color="#000099">Sell machines &raquo;</font></a></p>
+       </div>  
+      </div>
+
+      <hr>
+    </div>
+    
+    
+    <br>
+    <div id="templatemo_footer_wrapper" align="center">
+<footer>
+	<div id="templatemo_footer">
+    
+		<h3><i><font color="red">powerd_by </font>prems_creations</i></h3>
+
+	</div>
+	</footer>
+	
+</div>
+
+		
+    </body>
+</html>

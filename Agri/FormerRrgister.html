@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Agri_rigister</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/rei.css">
+		
+        <style>
+            body {
+				background-image:url(img/back/loginBack.jpg);
+                background-size: 100%;
+                background-attachment: fixed;  
+            }
+			input[type=number]{
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 25px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    </head>
+    <body>
+    
+     
+    <center>
+	
+  <div class="container" style="background-color:background-color:rgba(0,0,0,0.4); font-family:arial; border-radius:0px; padding:30px 40px;">
+  <form action="FormerRrgister.php">
+   <a class="navbar-brand"href="FormerRrgister.html" style="background-color:  darkgreen;color: white;padding: 10px 100px; width:95%;
+    border-radius: 0px;cursor: pointer;">Farmer</a>
+	  <a class="navbar-brand"href="CostemerRegister.html" style=" background-color:#4ffF50;color: white;padding: 10px 100px;border: none; width:95%;
+    border-radius: 0px;cursor: pointer;"><font color = white>Customer</a><br>
+   <font color ="yellow"><h2><u>FARMER REGISTRATIION</u></h2>
+	    
+	  <table  width="530" height="50" border="0" > 
+	  <tr> 
+	  <td>
+     <left><label for="fname">NAME</label></left></td>
+    <td>
+	
+	
+	
+	<input type="text" id="fname" name="name" placeholder="Enter your full name here" required><br></td>
+	</tr>
+	
+<tr>
+  <td>  <label for="lname">USERNAME</label></td>
+ <td>   <input type="text" id="usn" name="uname" placeholder="Select user name " required><br></td>
+ </tr>   
+<tr>
+   <td> <label for="passwrd">SELECT PASSWORD</label></td>
+	<td><input type="password" id="passwrd" name="passwrd" placeholder="Select password" required><br></td>	
+ </tr>
+<tr> 
+    <td>     <left><label for="lname">STATE</label></left></td>
+        
+  <td>  <form action="/cgi-bin/dropdown.cgi" method="post">
+            <select name="state">
+             <option value="Karnataka" selected>Karnataka</option>
+			  <option value="Gujrath">Gujrath</option>
+			   <option value="Panjab">Panjab</option>
+			    <option value="Rajasthana">Rajasthana</option>
+				 <option value="Kerala">Kerala</option>
+				  <option value="Tamilnadu">Tamilnadu</option>
+				   <option value="Andrapradesh">Andrapradesh</option>
+				    <option value="Uttara pradesh">Uttara pradesh</option>
+            </select>
+			</FORM>
+			<br>
+			</td>
+ </tr>
+<tr> 
+    <td> <label for="lname">CITY</label></td>
+   <td> <input type="text" id="usn" name="city" placeholder="Enter your City name" required><br></td>
+ </tr>
+<tr> 
+   <td>  <label for="lname">PIN-CODE</label></td>
+   <td> <input type="number" id="usn" name="pinc" placeholder="Enter your pincode" required><br></td>
+ </tr>
+<tr> 
+ <td> <label for="lname">PHONE NUMBER</label></td></td>
+    <td><input type="number" id="usn" name="pno" placeholder="Enter your phone number" required><br></td>
+  </tr>  
+    		
+</table>
+  <input type="submit" value="Submit" width="100%" style="width:50%; background-color:red;"/>  
+  <br>
+		<link><a href="FormerLogin.html"><font color="lime">Login Here...</a></link><br>
+		<link><a href="index.php"><font color="lime">Home</a></font></link>
+  </form>
+   
+</div      
+    </center>
+    
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
